@@ -27,7 +27,7 @@
             <MenuItem>
                 <MenuItem.Header>
                     <StackPanel Orientation="Vertical">
-                        <TextBlock Text="Mantenimientos" FontWeight="Bold" />
+                        <TextBlock Text="Mantenimientos" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" />
                     </StackPanel>
                 </MenuItem.Header>
             </MenuItem>
