@@ -5,9 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab02_C"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Content="click"></Button>
+        Title="Login" Height="450" Width="800">
+    <Grid Margin="0,0,0,2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
 
+        <TextBlock Grid.Row="0" Text="Inicio de Sesión" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Margin="328,65,0,0" />
+
+        <Label Content="Usuario:" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,119,0,0" />
+        <TextBox Name="txtUsuario" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200" Margin="0,164,0,0" />
+
+        <Label Content="Contraseña:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="366,195,0,0" />
+        <PasswordBox Name="txtContraseña" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200" Margin="0,240,0,0" />
+
+        <Button Content="Iniciar Sesión" HorizontalAlignment="Center" VerticalAlignment="Top" Width="100" Click="IniciarSesion_Click" Margin="0,302,0,0" />
     </Grid>
 </Window>

@@ -1,0 +1,50 @@
+﻿<Window x:Class="Lab02_C.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab02_C"
+        mc:Ignorable="d"
+        Title="Menú" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Menu VerticalAlignment="Center" HorizontalAlignment="Center">
+            <MenuItem>
+                <MenuItem.Header>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Operaciones" FontWeight="Bold" />
+                    </StackPanel>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem Header="Ingresos"/>
+            <MenuItem Header="Salida" />
+            <MenuItem>
+                <MenuItem.Header>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Mantenimientos" FontWeight="Bold" />
+                    </StackPanel>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem Header="Conductores" />
+            <MenuItem Header="Transportistas" />
+            <MenuItem Header="Camiones" />
+            <MenuItem Header="Productos" />
+            <MenuItem>
+                <MenuItem.Header>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Reportes" FontWeight="Bold" />
+                    </StackPanel>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem Header="Cargas" />
+            <MenuItem Header="Ingresos" />
+            <MenuItem Header="Salidas" />
+        </Menu>
+    </Grid>
+</Window>

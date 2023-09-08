@@ -24,5 +24,23 @@ namespace Lab02_C
         {
             InitializeComponent();
         }
+        private void IniciarSesion_Click(object sender, RoutedEventArgs e)
+        {
+            // Aquí puedes agregar la lógica para validar las credenciales del usuario.
+            string usuario = txtUsuario.Text;
+            string contraseña = txtContraseña.Password;
+
+            // Ejemplo de validación simple (debes implementar una lógica más segura).
+            if (usuario == "usuario" && contraseña == "contraseña")
+            {
+                Window1 window1 = new Window1();
+                this.Close();
+                window1.Show();
+            }
+            else
+            {
+                MessageBox.Show("Inicio de sesión fallido. Verifica tus credenciales.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
     }
 }
